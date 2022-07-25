@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+html,
+body,
+header,
+#intro {
+  height: 100vh;
+}
+body {
+  overflow-x: hidden;
+  background: #551d6b;
+  color: #fff;
+}
+p {
+  font-size: 18px;
+}
+.btn:hover {
+  cursor: pointer !important;
+}
+.btn-danger:hover {
+  background-color: #c90a1b !important;
+}
+.btn-outline-light {
+  color: #333;
+}
+.btn-outline-light:hover {
+  background-color: #ff3547 !important;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background-color: #551d6b;
+}
+.loader {
+  display: inline-block;
+  position: relative;
+}
+header {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+header video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%) scale(0.4);
+  object-fit: cover;
+}
+.animation-container {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #551d6b;
+  z-index: 0;
+}
+.header-overlap {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.8;
+}
+header .container {
+  position: relative;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.25;
+  z-index: 1;
+}
+#intro {
+  background: url("../public/img/header_bg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.navbar {
+  box-shadow: none;
+}
+.navbar .nav-link:hover {
+  color: #551d6b;
+}
+.navbar #button {
+  font-size: 14px;
+  padding: 10px 35px;
+}
+.mask .container-introduction h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 95px;
+  font-family: "Creepster", cursive;
+}
+.mask .container-introduction h2 {
+  color: #fff;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .mask {
+    margin-top: 32px !important;
+  }
+  .mask .container-introduction {
+    left: 10%;
+    top: 50%;
+  }
+  .mask .container-introduction h1 {
+    font-size: 70px;
+  }
+  .navbar #button {
+    padding: 8px 20px;
+  }
+}
+.top-nav-collapse {
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #000;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #000;
+  }
+}
+main .community-token .subtitle {
+  color: #0b0b45;
+}
+main .community-token h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+main .community-token .btn {
+  background-color: #0b0b45;
+  color: white;
+}
+main .community-token .btn:hover {
+  background-color: #000;
+}
+main .community-token video {
+  width: 100%;
+  height: 100%;
+}
+main #schematics {
+  background-color: #000;
+  height: 60vh;
+}
+main #schematics .subtitle {
+  color: #0b0b45;
+}
+main #schematics h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+main #schematics ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main #schematics ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main #schematics ul li i {
+  color: #00008b;
+}
+main .community-units .subtitle {
+  color: #0b0b45;
+}
+main .community-units h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+main .community-units ul {
+  font-weight: 800;
+}
+main .community-units ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main .community-units video {
+  width: 100%;
+  height: 100%;
+}
+main #download {
+  text-align: center;
+}
+main #download .subtitle {
+  color: #eee;
+}
+main #download h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+}
+main #download ul {
+  display: flex;
+  justify-content: center;
+}
+main #download ul li {
+  margin: 10px auto;
+  font-size: 18px;
+}
+main #download ul li a {
+  color: white;
+}
+footer {
+  background: #000;
+  color: white;
+  height: 35vh;
+}
+footer .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  #schematics {
+    height: auto !important;
+  }
+  footer {
+    height: auto;
+  }
+}
